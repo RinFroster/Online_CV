@@ -8,7 +8,7 @@ export default function Contact() {
     useEffect(() => {
         window.addEventListener("scroll",()=>{
             const windowOffsetTop = window.scrollY;
-            if(windowOffsetTop>1850){
+            if(windowOffsetTop>2270){
                 setAnimation(true);
                 setAnimationContact(true);
             }
