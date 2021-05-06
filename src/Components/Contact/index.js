@@ -53,7 +53,7 @@ export default function Contact() {
                                 <a href="https://www.facebook.com/hao.truong.77582359/"><FaEnvelope/></a>
                             </IconContext.Provider>
                             <div className="contact__infoTitle">Email: 
-                                <button className="contact__info" href="#">truongvihao99@gmail.com</button>
+                                <a className="contact__info" href="#">truongvihao99@gmail.com</a>
                             </div>
                         </div>
                     </div>

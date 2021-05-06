@@ -18,12 +18,10 @@
             display: flex;
             justify-content: space-between;
             .resume__item{
-                width: 48%;
                 border-left: 2px solid $border-color;
                 border-top: 2px dotted $border-color;
                 border-bottom: 2px dotted $border-color;
                 border-right: 2px solid $border-color;
-                border-radius: $br-1;
                 position: relative;
                 transition: all 0.5s;
                 &:hover{

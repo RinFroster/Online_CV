@@ -3,6 +3,7 @@
 @include responsive("small"){
     .main__content{
         width: 100%;
+        position: relative;
     }
     .collapseBtn{
         position: fixed;
@@ -39,10 +40,12 @@
 // Introduce
 @include responsive("small"){
     .introduce{
+        height: 50rem;
         background-attachment: inherit;
         background-position: right;
         .introduce__container{
             .introduce__text{
+                left: 6%;
                 font-size: 3rem;
             }
             .introduce__summary{
@@ -166,25 +169,28 @@
             }
         }
     }
-    .onDesktop{
-        display: none;
-    }
 }
 
 // Contact
 @include responsive("small"){
     .contact{
-        display: none;
         .contact__container{
-            .skill__title{
-
-            }
-            .skill__content{
-
+            .contact__content{
+                display: block;
+                .contact__contentRight{
+                    width: 100%;
+                    margin-bottom: 2rem;
+                    height: auto;
+                    padding-bottom: 2rem;
+                    padding-left: 1rem;
+                }
+                .contact__contentLeft{
+                    width: 100%;
+                    #send{
+                        margin-left: 3rem;
+                    }
+                }
             }
         }
-    }
-    .onDesktop{
-        display: none;
     }
 }

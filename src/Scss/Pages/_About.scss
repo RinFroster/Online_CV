@@ -1,7 +1,6 @@
 .about{
     width: 100%;
     background-color: #fff;
-    padding: 1rem 1.5rem;
     .about__container{
         .about__title{
             @include styleText($fs-7,$title-color,$fw-3);
@@ -78,46 +77,4 @@
     height: 0.5rem;
     background-color: $title-color;
     animation: title 1.5s forwards 0s 1 normal;
-}
-
-@keyframes fadeInLeft{
-    0%{
-        transform: translateX(-10rem);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInRight{
-    0%{
-        transform: translateX(10rem);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes title{
-    0%{
-        transform: translateX(-1rem);
-        width: 0;
-    }
-    100%{
-        transform: translateX(0);
-        width: 100%;
-    }
-}
-
-@keyframes fade{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
 }

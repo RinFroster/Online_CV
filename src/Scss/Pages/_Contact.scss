@@ -1,5 +1,4 @@
 .contact{
-    height: 70rem;
     width: 100%;
     background-color: #fff;
     padding: 1rem 1.5rem;
@@ -23,7 +22,6 @@
                 height: 50rem;
                 box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.3);
                 padding-top: 3rem;
-                padding-left: 1.5rem;
                 .contact__infoRow{
                     display: flex;
                     margin-bottom: 3rem;
@@ -49,7 +47,7 @@
             .contact__contentLeft{
                 width: 58%;
                 background-color: #fff;
-                height: 50rem;
+                // height: 50rem;
                 box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.3);
                 padding: 1rem 2rem;
                 .inputTitle{
@@ -64,7 +62,6 @@
                 }
                 #send{
                     padding: 1.5rem 3rem;
-                    margin-left: 19rem;
                     border-radius: $br-1;
                     outline: none;
                     background-color: #fff;
