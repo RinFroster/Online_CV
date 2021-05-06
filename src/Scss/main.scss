@@ -7,6 +7,9 @@
 // mixin
 @import "./Helper/mixin";
 
+// animations
+@import "./Helper/animation";
+
 // layout
 @import "./Pages/NavbarHome";
 @import "./Pages/Introduce";
@@ -17,6 +20,6 @@
 @import "./Pages/Contact";
 
 // responsive
-@import "./Responsive/LargeScreen";
-@import "./Responsive/MediumScreen";
 @import "./Responsive/SmallScreen";
+@import "./Responsive/MediumScreen";
+@import "./Responsive/LargeScreen";

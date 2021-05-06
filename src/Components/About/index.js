@@ -21,7 +21,7 @@ export default function About() {
                 <div className={`blankSpace ${addAnimationTitle ? "animationUnderline" : ""}`}></div>
                 <div className={`careerObjective ${addAnimation ? "fade" : ""}`}>
                     Career Objectives: <span>Improves and expand my abilities so that I can contribute more to the success of the company/team. Continue to learn new
-                        skill and knowledge to become a better developer in the future
+                        skill and knowledge to become a better developer in the future.
                     </span>
                 </div>
                 <div className="about__content">

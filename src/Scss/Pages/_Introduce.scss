@@ -1,16 +1,20 @@
 .main__content{
-    width: 78%;
     display: block;
     height: 100%;
-    position: absolute;
     right: 0;
+    .btn-back-to-top img{
+        position: fixed;
+        bottom: 5%;
+        right: 1.5rem;
+        z-index: 3;
+    }
+    .hide{
+        opacity: 0;
+    }
 }
 .introduce{
-    height: 100%;
     width: 100%;
-    background-attachment: fixed;
     background-image: url(./../Asset/img/test.jpg);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     .introduce__container{
@@ -24,7 +28,6 @@
         .introduce__text{
             position: absolute;
             top: 20%;
-            left: 7%;
             @include styleText(4.5rem,$text-base-color,$fw-2);
             animation: Heading 1.5s forwards 0.5s 1 normal;
             z-index: 2;
@@ -34,7 +37,6 @@
         .introduce__summary{
             position: absolute;
             width: 50%;
-            top: 30%;
             left: 7%;
             @include styleText($fs-5,$text-base-color,$fw-2);
             animation: Summary 1.5s forwards 0.5s 1 normal;
@@ -44,27 +46,5 @@
                 margin-bottom: 0;
             }
         }
-    }
-}
-
-@keyframes Heading {
-    0%{
-        transform: translateY(-20rem);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes Summary {
-    0%{
-        transform: translateX(20rem);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
     }
 }

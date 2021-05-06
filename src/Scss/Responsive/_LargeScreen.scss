@@ -1,0 +1,123 @@
+// Reponsive min-width 1200px
+
+@include responsive("large"){
+    .main__content{
+        position: absolute;
+        width: 78%;
+    }
+    .collapseBtn{
+        display: none;
+    }
+}
+
+// Navbar Home
+@include responsive("large"){
+    .navbarHome{
+        width: 22%;
+        left: 0;
+        overflow-y: visible;
+        .closeBtn{
+            display: none;
+        }
+    }
+}
+
+// Introduce
+@include responsive("large"){
+    .introduce{
+        height: 100%;
+        .introduce__container{
+            .introduce__text{
+                left: 6.7%;
+                font-size: 4.5rem;
+            }
+            .introduce__summary{
+                font-size: $fs-5;
+            }
+        }
+    }
+}
+
+// About
+@include responsive("large"){
+    .about{
+        .about__container{
+            .careerObjective{
+                font-size: $fs-6;
+                span{
+                    font-size: $fs-4;
+                }
+            }
+        }
+    }
+}
+
+// Resume
+@include responsive("large"){
+    .resume{
+        .resume__container{
+            .resume__content{
+                display: flex;
+                .resume__item{
+                    width: 48%;
+                    .resume__itemContainer{
+                        .resume__schoolTime{
+                            width: 35%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Skill
+@include responsive("large"){
+    .skill{
+        .skill__container{
+            .skill__content{
+                .skill__bars{
+                    .skill__items{
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Portfolio
+@include responsive("large"){
+    .portfolio{
+        .portfolio__container{
+            .portfolio__content{
+                .portfolio__item{
+                    .portfolio__overlay{
+                        .projectLink__btn{
+                            margin-left: 13rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Contact
+@include responsive("large"){
+    .contact{
+        .contact__container{
+            .contact__content{
+                .contact__contentRight{
+                    padding-left: 1.5rem;
+                }
+                .contact__contentLeft{
+                    #send{
+                        margin-left: 19rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -61,7 +61,6 @@
                     background-color: #fff;
                     border: 2px solid $title-color;
                     border-radius: $br-1;
-                    padding: 1rem;
                     transition: all 0.5s;
                     &:hover{
                         transform: scale(1.05);
@@ -96,16 +95,5 @@
                 animation-delay: 1.7s;
             }
         }
-    }
-}
-
-@keyframes fadeInTop{
-    0%{
-        transform: translateY(100rem);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
     }
 }

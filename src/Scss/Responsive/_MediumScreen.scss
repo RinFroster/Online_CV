@@ -1,0 +1,143 @@
+// Reponsive min-width 768px
+
+// Navbar Home
+@include responsive("medium"){
+    .navbarHome{
+        width: 40%;
+        left: -100rem;
+    }
+}
+
+// Introduce
+@include responsive("medium"){
+    .introduce{
+        background-attachment: fixed;
+        background-position: center;
+        .introduce__container{
+            .introduce__text{
+                left: 6.5%;
+                font-size: 4rem;
+            }
+            .introduce__summary{
+                font-size: $fs-3;
+                width: 50%;
+                top: 32%;
+            }
+        }
+    }
+}
+
+// About
+@include responsive("medium"){
+    .about{
+        padding: 1rem 1.5rem;
+        .about__container{
+            .about__content{
+                display: flex;
+                .about__contentLeft{
+                    width: 48%;
+                }
+                .about__contentRight{
+                    margin-top: 0;
+                    width: 48%;
+                }
+            }
+        }
+    }
+}
+
+// Resume
+@include responsive("medium"){
+    .resume{
+        .resume__container{
+            .resume__content{
+                display: flex;
+                .resume__item{
+                    width: 48%;
+                    border-bottom: 2px dotted $border-color;
+                    border-top: 2px dotted $border-color;
+                    border-right: 2px solid $border-color;
+                    border-radius: $br-1;
+                    &::after{
+                        content: "";
+                    }
+                    &:hover{
+                        border-top: 2px solid $border-color;
+                        border-bottom: 2px solid $border-color;
+                        border-right: 2px solid $border-color;
+                    }
+                    .resume__itemContainer{
+                        .resume__schoolTime{
+                            width: 50%;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Skill
+@include responsive("medium"){
+    .skill{
+        .skill__container{
+            .skill__content{
+                .skill__bars{
+                    display: flex;
+                    .skill__items{
+                        padding: 1rem 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+    .onDesktop{
+        display: block;
+    }
+    .onMobile{
+        display: none;
+    }
+}
+
+// Portfolio
+@include responsive("medium"){
+    .portfolio{
+        .portfolio__container{
+            .portfolio__content{
+                display: grid;
+                .portfolio__item{
+                    margin-bottom: 0;
+                    width: 90%;
+                    .portfolio__overlay{
+                        .projectLink__btn{
+                            margin-left: 7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Contact
+@include responsive("medium"){
+    .contact{
+        .contact__container{
+            .contact__content{
+                display: flex;
+                .contact__contentRight{
+                    width: 40%;
+                    margin-bottom: 0;
+                    padding-left: 1rem;
+                }
+                .contact__contentLeft{
+                    width: 58%;
+                    #send{
+                        margin-left: 10rem;
+                    }
+                }
+            }
+        }
+    }
+}

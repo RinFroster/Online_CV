@@ -59,7 +59,6 @@
                         background-color: #0e101c;
                         border: 1px solid #516391;
                         transition: all 0.5s;
-                        margin-left: 13rem;
                         text-decoration: none;
                         @include styleText($fs-4,$text-base-color,$fw-2);
                         &:hover{

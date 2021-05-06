@@ -6,9 +6,15 @@ import { FaCodepen, FaFacebook, FaGithub, FaStackOverflow } from 'react-icons/fa
 import { IconContext } from "react-icons";
 
 export default function NavbarHome() {
+    const getScreenWidth = window.width;
     const closeNav = () => {
-        document.getElementsByClassName("navbarHome")[0].style.left = "-30rem";
-        document.getElementById("openBtn").style.display = "block";
+        if(getScreenWidth>=320 && getScreenWidth<768){
+            document.getElementsByClassName("navbarHome")[0].style.left = "-30rem";
+            document.getElementById("openBtn").style.display = "block";
+        }else{
+            document.getElementsByClassName("navbarHome")[0].style.left = "-100rem";
+            document.getElementById("openBtn").style.display = "block";
+        }
     }
     return (
         <header className="navbarHome" id="navbar">
@@ -70,7 +76,6 @@ export default function NavbarHome() {
                         </ul>
                     </div>
                 </div>
-                <div className="navbarHome__bottom"></div>
             </div>
         </header>
     )
