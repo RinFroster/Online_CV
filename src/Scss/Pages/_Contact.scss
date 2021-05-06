@@ -1,0 +1,85 @@
+.contact{
+    height: 70rem;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    position: relative;
+    z-index: 2;
+    .contact__container{
+        .contact__title{
+            @include styleText($fs-7,$title-color,$fw-3);
+        }
+        .contact__section{
+            padding-top: 2rem;
+            @include styleText($fs-4,$title-color,$fw-2);
+        }
+        .contact__content{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 1rem;
+            .contact__contentRight{
+                width: 40%;
+                background-color: #fff;
+                height: 50rem;
+                box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.3);
+                padding-top: 3rem;
+                padding-left: 1.5rem;
+                .contact__infoRow{
+                    display: flex;
+                    margin-bottom: 3rem;
+                    .contact__infoIcon{
+                        font-size: $fs-6;
+                        margin-right: 1rem;
+                    }
+                    .contact__infoTitle{
+                        @include styleText($fs-4,#000,$fw-2);
+                        line-height: 1.2;
+                        .contact__info{
+                            cursor: pointer;
+                            text-decoration: none;
+                            margin-left: 0.5rem;
+                            @include styleText($fs-3,#173B6C,$fw-2);
+                        }
+                    }
+                }
+            }
+            .contact__contentRight.fadeInTop{
+                animation: fadeInTop 1.5s forwards 0s 1 normal;
+            }
+            .contact__contentLeft{
+                width: 58%;
+                background-color: #fff;
+                height: 50rem;
+                box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.3);
+                padding: 1rem 2rem;
+                .inputTitle{
+                    padding-bottom: 0.8rem;
+                    @include styleText($fs-4,$title-color,$fw-2);
+                }
+                #subject{
+                    height: 5rem;
+                }
+                #message{
+                    height: 20rem;
+                }
+                #send{
+                    padding: 1.5rem 3rem;
+                    margin-left: 19rem;
+                    border-radius: $br-1;
+                    outline: none;
+                    background-color: #fff;
+                    border: 1px solid #516391;
+                    transition: all 0.5s;
+                    @include styleText($fs-4,$title-color,$fw-2);
+                    &:hover{
+                        background-color: #bf1650;
+                        color: $text-base-color;
+                    }
+                }
+            }
+            .contact__contentLeft.fadeInTop{
+                animation: fadeInTop 1.5s forwards 0s 1 normal;
+            }
+        }
+    }
+}

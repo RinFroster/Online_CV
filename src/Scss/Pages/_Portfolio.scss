@@ -1,0 +1,98 @@
+.portfolio{
+    width: 100%;
+    background-color: $bg-page;
+    padding: 1rem 1.5rem;
+    position: relative;
+    z-index: 2;
+    .portfolio__container{
+        .portfolio__title{
+            @include styleText($fs-7,$title-color,$fw-3);
+        }
+        .portfolio__content{
+            display: grid;
+            grid-row-gap:2rem;
+            grid-template-columns: repeat(2, 1fr);
+            padding-top: 3rem;
+            .portfolio__item{
+                height: 25rem;
+                width: 90%;
+                margin: 0 auto;
+                cursor: pointer;
+                position: relative;
+                transition: all 0.5s;
+                border-radius: $br-1;
+                box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.3);
+                opacity: 0;
+                .portfolio__overlay{
+                    border-radius: $br-1;
+                    background-color: #081229;
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    padding: 1rem 1rem;
+                    transition: ease 0.5s;
+                    .project__name{
+                        text-align: center;
+                        @include styleText($fs-4,$text-base-color,$fw-3);
+                    }
+                    .project__textArea{
+                        text-align: left;
+                        padding-top: 2rem;
+                        padding-left: 2rem;
+                        margin-bottom: 3rem;
+                        .project__text{
+                            @include styleText($fs-3,$text-base-color,$fw-2);
+                            .project__span{
+                                margin-left: 0.5rem;
+                                @include styleText($fs-2,$text-base-color,$fw-1);
+                            }
+                        }
+                    }
+                    .projectLink__btn{
+                        padding: 1.5rem 3rem;
+                        border-radius: $br-1;
+                        outline: none;
+                        background-color: #0e101c;
+                        border: 1px solid #516391;
+                        transition: all 0.5s;
+                        margin-left: 13rem;
+                        text-decoration: none;
+                        @include styleText($fs-4,$text-base-color,$fw-2);
+                        &:hover{
+                            background-color: #bf1650;
+                        }
+                    }
+                }
+                .project__img{
+                    border-radius: $br-1;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    transition: all 0.5s;
+                }
+            }
+            .portfolio__item:hover .portfolio__overlay{
+                opacity: 1;
+            }
+            .portfolio__item.fadeInTop{
+                animation: fadeInTop 1.5s forwards 0s 1 normal;
+            }
+            .portfolio__item.fadeInTop:nth-child(1){
+                animation-delay: 0.3s;
+            }
+            .portfolio__item.fadeInTop:nth-child(2){
+                animation-delay: 0.5s;
+            }
+            .portfolio__item.fadeInTop:nth-child(3){
+                animation-delay: 0.7s;
+            }
+            .portfolio__item.fadeInTop:nth-child(4){
+                animation-delay: 0.9s;
+            }
+        }
+    }
+}

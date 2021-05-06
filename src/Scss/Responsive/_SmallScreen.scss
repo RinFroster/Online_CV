@@ -1,0 +1,190 @@
+// Reponsive min-width 320px
+
+@include responsive("small"){
+    .main__content{
+        width: 100%;
+    }
+    .collapseBtn{
+        position: fixed;
+        right: 1.5rem;
+        top: 1.5rem;
+        z-index: 3;
+        border: 0;
+        transition: all 0.5s;
+        width: 4rem;
+        height: 4rem;
+        display: inline-flex;
+        align-items: center;
+        background-color: #149ddd;
+        border-radius: 5rem;
+        cursor: pointer;
+        line-height: 0;
+        justify-content: center;
+        outline: none;
+        transition: all 0.5s;
+        .collapseBar{
+            @include styleText($fs-5,$text-base-color,$fw-1);
+        }
+    }
+}
+
+// Navbar Home
+@include responsive("small"){
+    .navbarHome{
+        width: 90%;
+        left: -30rem;
+    }
+}
+
+// Introduce
+@include responsive("small"){
+    .introduce{
+        background-attachment: inherit;
+        background-position: right;
+        .introduce__container{
+            .introduce__text{
+                font-size: 3rem;
+            }
+            .introduce__summary{
+                font-size: $fs-3;
+                width: 70%;
+            }
+        }
+    }
+}
+
+// About
+@include responsive("small"){
+    .about{
+        padding: 1rem 1rem;
+        .about__container{
+            .careerObjective{
+                font-size: $fs-5;
+                span{
+                    font-size: $fs-3;
+                }
+            }
+            .about__content{
+                display: block;
+                .about__contentLeft{
+                    width: 100%;
+                }
+                .about__contentRight{
+                    margin-top: 2rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// Resume
+@include responsive("small"){
+    .resume{
+        .resume__container{
+            .resume__content{
+                display: block;
+                .resume__item{
+                    width: 100%;
+                    border-bottom: none;
+                    border-top: none;
+                    border-right: none;
+                    border-radius: 0;
+                    margin-bottom: 2rem;
+                    &::after{
+                        content: none;
+                    }
+                    &:hover{
+                        border-top: none;
+                        border-bottom: none;
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Skill
+@include responsive("small"){
+    .skill{
+        .skill__container{
+            .skill__content{
+                .skill__bars{
+                    display: block;
+                    background: transparent;
+                    width: 100%;
+                    .collapse__header{
+                        border: none;
+                    }
+                    .collapse__body{
+                        display: none;
+                        align-items: center;
+                        border: none;
+                        padding: 1rem;
+                        flex-wrap: wrap;
+                        transition: all 0.5s;
+                        .skill__items{
+                            width: 100%;
+                            margin-top: 1rem;
+                            text-align: center;
+                            &:hover{
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                    .collapse__body.show{
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+    .onDesktop{
+        display: none;
+    }
+    .onMobile{
+        display: block;
+    }
+}
+
+// Portfolio
+@include responsive("small"){
+    .portfolio{
+        .portfolio__container{
+            .portfolio__content{
+                display: block;
+                .portfolio__item{
+                    margin-bottom: 2rem;
+                    width: 100%;
+                    .portfolio__overlay{
+                        .projectLink__btn{
+                            margin-left: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .onDesktop{
+        display: none;
+    }
+}
+
+// Contact
+@include responsive("small"){
+    .contact{
+        display: none;
+        .contact__container{
+            .skill__title{
+
+            }
+            .skill__content{
+
+            }
+        }
+    }
+    .onDesktop{
+        display: none;
+    }
+}

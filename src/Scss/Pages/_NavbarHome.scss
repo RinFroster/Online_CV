@@ -1,0 +1,88 @@
+.navbarHome{
+    position: fixed;
+    height: 100%;
+    display: block;
+    background-color: $navbarHome-color;
+    width: 22%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    z-index: 3;
+    transition: all 0.5s;
+    .closeBtn{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: $fs-4;
+        color: #fff;
+    }
+    .navbarHome__container{
+        .navbarHome__top{
+            cursor: pointer;
+            .navbarHome__pic{
+                width: 12rem;
+                height: 12rem;
+                background-color: #fff;
+                border-radius: 100%;
+                margin: 1.5rem auto;
+                position: relative;
+                overflow: hidden;
+                border: 8px solid #2c2f3f;
+                img{
+                    width: 100%;
+                    position: absolute;
+                    top: -7rem;
+                }
+            }
+            .navbarHome__name{
+                text-align: center;
+                @include styleText($fs-5,$text-base-color,$fw-2);
+            }
+            .navbarHome__socialNetwork{
+                padding: 1.5rem 3.1rem;
+                .react__icons{
+                    color: #fff;
+                    font-size: $fs-6;
+                    margin-right: 2rem;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: $text-base-color-hover;
+                    }
+                }
+            }
+        }
+        .navbarHome__main{
+            padding: 2rem 0;
+            .navbarHome__nav{
+                .navbarHome__menu{
+                    .navbarHome__item{
+                        display: flex;
+                        margin-bottom: 2rem;
+                        cursor: pointer;
+                        .navbarHome__link{
+                            text-decoration: none;
+                            text-transform: capitalize;
+                            .navbarHome__icon{
+                                color: #fff;
+                                font-size: $fs-6;
+                                margin-right: 1rem;
+                            }
+                            .nav__text{
+                                @include styleText($fs-3,$text-base-color,$fw-2);
+                                line-height: 1;
+                            }
+                        }
+                        .navbarHome__link.active >.navbarHome__icon,.navbarHome__link.active >.nav__text{
+                            color: $text-base-color-hover;
+                        }
+                        &:hover .navbarHome__icon, &:hover .nav__text{
+                            color: $text-base-color-hover;
+                        }
+                    }
+                }
+            }
+        }
+        .navbarHome__bottom{
+
+        }
+    }
+}

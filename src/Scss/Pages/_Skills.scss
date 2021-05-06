@@ -1,0 +1,111 @@
+.skill{
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    position: relative;
+    z-index: 2;
+    .skill__container{
+        .skill__title{
+            @include styleText($fs-7,$title-color,$fw-3);
+        }
+        .skill__content{
+            padding-top: 2rem;
+            .skill__bars{
+                display: flex;
+                align-items: center;
+                background-color: #E6F4F1;
+                border-left:2px solid $title-color;
+                border-right: 2px solid $title-color;
+                border-top: 2px dotted $title-color;
+                border-bottom: 2px dotted $title-color;
+                border-radius: $br-1;
+                margin-bottom: 3rem;
+                padding: 1rem;
+                position: relative;
+                transition: ease-in-out 0.5s;
+                opacity: 0;
+                &::before{
+                    content: "";
+                    background-color: #fff;
+                    border-radius: 50%;
+                    border: 2px solid $title-color;
+                    position: absolute;
+                    top: -0.7rem;
+                    left: -9px;
+                    height: 1.6rem;
+                    width: 1.6rem;
+                }
+                &::after{
+                    content: "";
+                    background-color: #fff;
+                    border-radius: 50%;
+                    border: 2px solid $title-color;
+                    position: absolute;
+                    bottom: -0.7rem;
+                    right: -9px;
+                    height: 1.6rem;
+                    width: 1.6rem;
+                }
+                &:hover{
+                    background-color: #fff;
+                    border-top: 2px solid $title-color;
+                    border-bottom: 2px solid $title-color;
+                }
+                .skill__barTitle{
+                    @include styleText($fs-4,$title-color,$fw-3);
+                    margin-right: 1rem;
+                }
+                .skill__items{
+                    @include styleText($fs-3,$resume-schoolName-color,$fw-2);
+                    margin-right: 1rem;
+                    background-color: #fff;
+                    border: 2px solid $title-color;
+                    border-radius: $br-1;
+                    padding: 1rem;
+                    transition: all 0.5s;
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
+            }
+            .skill__bars.fadeInTop{
+                animation: fadeInTop 1.5s forwards 0s 1 normal;
+            }
+            .skill__bars.fadeInTop:nth-child(1){
+                animation-delay: 0.3s;
+            }
+            .skill__bars.fadeInTop:nth-child(2){
+                animation-delay: 0.5s;
+            }
+            .skill__bars.fadeInTop:nth-child(3){
+                animation-delay: 0.7s;
+            }
+            .skill__bars.fadeInTop:nth-child(4){
+                animation-delay: 0.9s;
+            }
+            .skill__bars.fadeInTop:nth-child(5){
+                animation-delay: 1.1s;
+            }
+            .skill__bars.fadeInTop:nth-child(6){
+                animation-delay: 1.3s;
+            }
+            .skill__bars.fadeInTop:nth-child(7){
+                animation-delay: 1.5s;
+            }
+            .skill__bars.fadeInTop:nth-child(8){
+                animation-delay: 1.7s;
+            }
+        }
+    }
+}
+
+@keyframes fadeInTop{
+    0%{
+        transform: translateY(100rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

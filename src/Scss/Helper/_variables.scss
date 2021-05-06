@@ -1,0 +1,43 @@
+// color
+$navbarHome-color:#040B14;
+$bg-main: #000;
+$bg-page:#E6F4F1;
+$icon-color:#fff;
+$icon-color-hover: #149DDD;
+$text-color: #000;
+$text-base-color: #fff;
+$text-base-color-hover: #149DDD;
+$title-color:#173B6C;
+$border-color: #1f5297;
+$resume-schoolName-color:#050d18;
+
+// font-family
+$ff-0 :'Roboto', sans-serif;
+
+// font-size
+$fs-0: 10px;
+$fs-1: 11px;
+$fs-2: 13px;
+$fs-3:15px;
+$fs-4:18px;
+$fs-5:20px;
+$fs-6:24px;
+$fs-7:30px;
+
+// font-weight
+$fw-0:300;
+$fw-1:400;
+$fw-2:500;
+$fw-3:700;
+
+// border-radius
+$br-0: 4px;
+$br-1: 5px;
+$br-2: 10px;
+
+//break points
+$breakpoints:(
+    'large' : 1200px,
+    'medium' : 768px,
+    'small' : 320px,
+);

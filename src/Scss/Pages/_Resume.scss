@@ -1,0 +1,90 @@
+.resume{
+    width: 100%;
+    background-color: $bg-page;
+    padding: 1rem 1.5rem;
+    position: relative;
+    z-index: 2;
+    .resume__container{
+        .resume__title{
+            @include styleText($fs-7,$title-color,$fw-3);
+        }
+        .resume__contentTitle{
+            padding-top: 2rem;
+            @include styleText($fs-6,$title-color,$fw-2);
+        }
+        .resume__content{
+            padding-top: 1rem;
+            padding-left: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            .resume__item{
+                width: 48%;
+                border-left: 2px solid $border-color;
+                border-top: 2px dotted $border-color;
+                border-bottom: 2px dotted $border-color;
+                border-right: 2px solid $border-color;
+                border-radius: $br-1;
+                position: relative;
+                transition: all 0.5s;
+                &:hover{
+                    border-left: 2px solid $border-color;
+                    border-top: 2px solid $border-color;
+                    border-bottom: 2px solid $border-color;
+                    border-right: 2px solid $border-color;
+                    background-color: #fff;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    border-radius: 50%;
+                    left: -0.9rem;
+                    top: -0.5rem;
+                    background-color: #fff;
+                    border: 2px solid $border-color;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    border-radius: 50%;
+                    right: -0.9rem;
+                    bottom: -0.5rem;
+                    background-color: #fff;
+                    border: 2px solid $border-color;
+                }
+                .resume__itemContainer{
+                    padding: 0 0 2rem 2rem;
+                    .resume__schoolName{
+                        padding-top: 1rem;
+                        @include styleText($fs-4,$resume-schoolName-color,600);
+                        margin-bottom: 1rem;
+                    }
+                    .resume__schoolTime{
+                        background-color: #E4EDF9;
+                        width: 35%;
+                        text-align: center;
+                        @include styleText($fs-3,#202326,$fw-2);
+                    }
+                    .resume__subject{
+                        padding-top: 2rem;
+                        @include styleText($fs-2,#202326,$fw-1);
+                        .resume__text{
+                            margin-left: 0.5rem;
+                        }
+                    }
+                }
+            }
+            .resume__item.fadeInLeft{
+                animation: fadeInLeft 1.5s forwards 0s 1 normal;
+            }
+            .resume__item.fadeInRight{
+                animation: fadeInRight 1.5s forwards 0s 1 normal;
+            }
+        }
+    }
+}
