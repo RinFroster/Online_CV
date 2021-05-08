@@ -59,13 +59,13 @@ export default function Portfolio() {
                             <div className="project__name">Tix Web</div>
                             <div className="project__textArea">
                                 <div className="project__text">Description: 
-                                    <span className="project__span">A clone UI Tix Website with full responsive</span>
+                                    <span className="project__span">A clone Tix Website with full responsive</span>
                                 </div>
                                 <div className="project__text">Teamsize: 
                                     <span className="project__span">2</span>
                                 </div>
                                 <div className="project__text">Technology: 
-                                    <span className="project__span">HTML5, CSS3, Bootstrap4, Javascript, SASS/SCSS</span>
+                                    <span className="project__span">HTML5, CSS3, Bootstrap4, Javascript, SASS/SCSS, ReactJs, Redux, Redux-Thunk, react-scroll, react-paginate, react-countdown, react-hook-form, react-custom-scrollbars and react-slick</span>
                                 </div>
                             </div>
                             <a className="projectLink__btn" href="https://github.com/RinFroster/Final_Project_Cinema">Link GitHub</a>
