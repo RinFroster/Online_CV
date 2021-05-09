@@ -31,7 +31,7 @@ export default function Skills() {
                     <li className={`skill__bars ${addAnimationSkill ? "fadeInTop" : ""}`}>
                         <div className="skill__barTitle">Javascript: </div>
                         <span className="skill__items">ES5/ES6</span>
-                        <span className="skill__items">RESTfull API</span>
+                        <span className="skill__items">RESTful API</span>
                         <span className="skill__items">Axios</span>
                     </li>
                     <li className={`skill__bars ${addAnimationSkill ? "fadeInTop" : ""}`}>
